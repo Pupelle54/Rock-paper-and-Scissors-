@@ -39,8 +39,15 @@
                 } else {
                     if ((humanChoice==="rock" && computerChoice==="scissors") ||
                 (humanchoice==="paper" && computerChoice==="rock") ||
-            (humanchoice==="scissors" && computerChoice==="paper")) 
+            (humanchoice==="scissors" && computerChoice==="paper")) {
+                console.log(`You win !! ${humanChoice} beats ${computerChoice}.`);
+                humanScore++;
+            }else {
+                console.log(`Computer wins!! ${computerChoice} beats ${humanChoice}.`)
+                computerScore++;
+            }
                 }
+
             } 
         }
 
