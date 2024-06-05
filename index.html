@@ -38,14 +38,15 @@
                     console.log("It's a tie")
                 } else {
                     if ((humanChoice==="rock" && computerChoice==="scissors") ||
-                (humanchoice==="paper" && computerChoice==="rock") ||
-            (humanchoice==="scissors" && computerChoice==="paper")) {
+                (humanChoice==="paper" && computerChoice==="rock") ||
+            (humanChoice==="scissors" && computerChoice==="paper")) {
                 console.log(`You win !! ${humanChoice} beats ${computerChoice}.`);
                 humanScore++;
             }else {
                 console.log(`Computer wins!! ${computerChoice} beats ${humanChoice}.`)
                 computerScore++;
             }
+        }
             console.log(`Scores- Human: ${humanScore}, Computer: ${computerScore}`);
                 }
                 for(let i =0; i<5; i++) {
@@ -63,12 +64,9 @@
                     console.log("Sorry, the computer is the overall winner");
                 } else {
                     console.log("The game is a tie overall");
-                }
+            }
                 
-                }
-
-            } 
-        
+        }
 
     </script>
 </body>
