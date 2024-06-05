@@ -48,10 +48,20 @@
             }
             console.log(`Scores- Human: ${humanScore}, Computer: ${computerScore}`);
                 }
+                for(let i =0; i<5; i++) {
+                    const humanSelection = getHumanChoice();
+                    if(humanSelection) {
+                        const computerSelection = getComputerChoice();
+                        playRound(humanSelection, computerSelection);
+                    } else {
+                        i--;
+                    }
+                }
                 
+                }
 
             } 
-        }
+        
 
     </script>
 </body>
