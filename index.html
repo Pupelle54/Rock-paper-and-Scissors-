@@ -19,6 +19,16 @@
                 return "scissors";
             }
         }
+        function getHumanChoice() {
+            const choice = prompt("Enter your choice: rock, paper or scissors");
+            if (choice==="rock" || choice==="paper" || choice==="scissors") {
+                return choice;
+            } else {
+                console.log("Invalid choice! Please enter rock, paper or scissors")
+                return null;
+            }
+        }
+
     </script>
 </body>
 </html>
